@@ -89,9 +89,12 @@ def predict_sentence(model, sentence,  vocab_to_int, int_to_languages):
     else:
         return int_to_languages[lang_index]
 
-mode = "run"
+mode = "test"
 if len(sys.argv)>1:
     mode = sys.argv[1]
+
+if mode=="test":
+    predSentence = sys.argv[2]
 
 # Neu mode la train thi thuc hien train
 if mode=="train":
@@ -190,6 +193,5 @@ else:
 
 
     # Predict
-    predSentence = "I love you very much"
     print("Check language for sentence= ", predSentence)
     print("Language=", predict_sentence(model, predSentence, vocab_to_int, int_to_languages))
