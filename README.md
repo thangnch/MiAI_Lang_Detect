@@ -1,7 +1,7 @@
 # MiAI_Lang_Detect
 Use LSTM model to detect language
 
-Article link: http://ainoodle.tech/2019/09/11/face-recog-2-0-nhan-dien-khuon-mat-trong-video-bang-mtcnn-va-facenet/
+Article link: http://ainoodle.tech/2019/09/25/thu-choi-lon-day-may-tinh-hoc-nhan-dien-ngoai-ngu-bang-mang-lstm/
 
 #MìAI 
 Fanpage: http://facebook.com/miaiblog<br>
