@@ -160,14 +160,14 @@ if mode=="train":
 
 
 
-    with tf.device('/gpu:0'):
+    #with tf.device('/gpu:0'):
         # Pad cac dau cho du do dai
-        X_train_pad = sequence.pad_sequences(X_train_encoded, maxlen=max_sentence_length)
-        X_test_pad = sequence.pad_sequences(X_test_encoded, maxlen=max_sentence_length)
+    X_train_pad = sequence.pad_sequences(X_train_encoded, maxlen=max_sentence_length)
+    X_test_pad = sequence.pad_sequences(X_test_encoded, maxlen=max_sentence_length)
 
-        # Tao model
-        model = get_model()
-        print(model.summary())
+    # Tao model
+    model = get_model()
+    print(model.summary())
 
     # Train the model
     model.fit(X_train_pad, y_train_encoded, epochs=5, batch_size=256)
